@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Team<span class="highlight">Portfolio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="themeToggler" class="btn theme-toggler" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center d-flex align-items-center">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="display-3 fw-bold">Meet Our <span class="highlight">Amazing</span> Team</h1>
+            <p class="lead">We are a group of talented professionals passionate about creating exceptional digital experiences that transform ideas into reality.</p>
+            <div class="mt-4">
+                <a href="#team" class="btn btn-lg btn-outline-light rounded-pill px-4 py-2 me-2">View Our Team</a>
+                <a href="#contact" class="btn btn-lg btn-warning rounded-pill px-4 py-2">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Meet Our <span class="text-primary">Amazing</span> Team</h2>
+                <p class="lead">Talented professionals ready to bring your vision to life</p>
+            </div>
+
+            <!-- Featured Team Member -->
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="featured-member">
+                        <h3 class="text-center mb-4">Featured Team Member</h3>
+                        <a href="crisann.html" class="team-member-link">
+                            <div class="team-member-card large-card">
+                                <img src="images/crisann.jpg" alt="Cris Ann" class="team-member-img">
+                                <div class="team-member-overlay">
+                                    <div class="team-member-info">
+                                        <h4>Cris Ann Frias Mendoza</h4>
+                                        <p>UX/UI Designer</p>
+                                        <p class="featured-description">Lead designer focusing on creating intuitive and engaging user experiences.</p>
+                                        <span class="view-profile">View Full Profile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-masonry">
+                <!-- First row: 3 team members (Excluding Cris Ann) -->
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <a href="aira.html" class="team-member-link">
+                            <div class="team-member-card card-switch">
+                                <img src="images/aira.jpg" alt="Aira" class="team-member-img active">
+                                <img src="images/figma.jpg" alt="Aira Work" class="team-member-img">
+                                <div class="team-member-overlay">
+                                    <div class="team-member-info">
+                                        <h4>Aira</h4>
+                                        <p>Frontend Developer</p>
+                                        <span class="view-profile">View Profile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <a href="sam.html" class="team-member-link">
+                            <div class="team-member-card card-switch">
+                                <img src="images/sam.jpg" alt="Sam" class="team-member-img active">
+                                <img src="images/vscode.jpg" alt="Sam Work" class="team-member-img">
+                                <div class="team-member-overlay">
+                                    <div class="team-member-info">
+                                        <h4>Sam</h4>
+                                        <p>Backend Developer</p>
+                                        <span class="view-profile">View Profile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <a href="adrienne.html" class="team-member-link">
+                            <div class="team-member-card card-switch">
+                                <img src="images/adrienne.jpg" alt="Adrienne" class="team-member-img active">
+                                <img src="images/pc.jpg" alt="Adrienne Work" class="team-member-img">
+                                <div class="team-member-overlay">
+                                    <div class="team-member-info">
+                                        <h4>Adrienne</h4>
+                                        <p>Project Manager</p>
+                                        <span class="view-profile">View Profile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Second row: 1 team member -->
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <a href="richmond.html" class="team-member-link">
+                            <div class="team-member-card card-switch">
+                                <img src="images/richmond.jpg" alt="Richmond" class="team-member-img active">
+                                <img src="images/vscode.jpg" alt="Richmond Work" class="team-member-img">
+                                <div class="team-member-overlay">
+                                    <div class="team-member-info">
+                                        <h4>Richmond P. Gallardo</h4>
+                                        <p>IT Student</p>
+                                        <span class="view-profile">View Profile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="background-color: white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2 class="section-title">About Our Team</h2>
+                    <p class="mb-4">We are a diverse group of professionals with expertise in various domains of web development and design. Our team collaborates to create innovative digital solutions that meet our clients' needs.</p>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle text-white" style="width: 50px; height: 50px">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Clean Code</h5>
+                            <p class="mb-0">We write clean, maintainable, and scalable code that follows best practices and industry standards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle text-white" style="width: 50px; height: 50px">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Creative Design</h5>
+                            <p class="mb-0">Our designs are not just visually appealing but also functional, providing excellent user experiences.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle text-white" style="width: 50px; height: 50px">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Fast Delivery</h5>
+                            <p class="mb-0">We ensure timely delivery of projects without compromising on quality or performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="position-relative">
+                        <img src="images/about-team.jpg" alt="Team at work" class="img-fluid rounded-3 shadow-lg">
+                        <div class="position-absolute top-0 start-0 translate-middle bg-warning rounded-circle d-flex align-items-center justify-content-center" style="width: 120px; height: 120px">
+                            <div class="text-center">
+                                <h3 class="mb-0 fw-bold">5+</h3>
+                                <p class="mb-0 small">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work With Us section (replacing Get In Touch) -->
+    <section id="work-with-us" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="work-with-us-content">
+                        <h6 class="text-accent fw-bold text-uppercase">Collaboration</h6>
+                        <h2 class="section-title mb-4">Work With Us</h2>
+                        <p class="mb-4">Looking to bring your digital ideas to life? Our team is ready to help you create innovative solutions that drive results. From concept to launch, we'll be with you every step of the way.</p>
+                        
+                        <div class="work-benefits">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="benefit-text">
+                                    <h5>Fast Delivery</h5>
+                                    <p>We deliver projects on time without compromising quality.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <div class="benefit-text">
+                                    <h5>Customized Solutions</h5>
+                                    <p>Tailored to your specific business needs and goals.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="benefit-text">
+                                    <h5>Ongoing Support</h5>
+                                    <p>We provide continuous assistance long after launch.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-buttons mt-5">
+                            <a href="#" class="btn btn-primary me-3">Start a Project</a>
+                            <a href="#" class="btn btn-outline-dark">View Our Work</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="work-with-us-image-container">
+                        <div class="pattern-bg"></div>
+                        <img src="images/vscode.jpg" alt="Team Collaboration" class="img-fluid work-image">
+                        <div class="stats-card">
+                            <div class="stats-item">
+                                <h3>3</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>100%</h3>
+                                <p>Satisfied Clients</p>
+                            </div>
+                            <div class="stats-item">
+                                <h3>3</h3>
+                                <p>System Presented</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <i class="fas fa-quote-left"></i>
+                                <p>Working with this team was incredible. They transformed our idea into a brilliant digital solution!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="images/crisann.jpg" alt="Client">
+                                <div>
+                                    <h6>Cris Ann Mendoza</h6>
+                                    <p>Team Leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section (minimal version) -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-3">Let's Connect</h2>
+            <p class="mb-4 mx-auto" style="max-width: 600px;">Ready to discuss your project? Reach out to us directly using any of these channels.</p>
+            
+            <div class="contact-channels mb-4">
+                <a href="mailto:contact@teamportfolio.com" class="contact-channel-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@teamportfolio.com</span>
+                </a>
+                <a href="tel:09111223845" class="contact-channel-item">
+                    <i class="fas fa-phone"></i>
+                    <span>09111223845</span>
+                </a>
+                <a href="#" class="contact-channel-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>LSPU SANTA CRUZ CAMPUS</span>
+                </a>
+            </div>
+            
+            <div class="social-channels">
+                <a href="https://www.facebook.com/share/1ABY681Kp2/" class="social-channel-item" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/kuki-yui123" class="social-channel-item" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/arwh_crdn/" class="social-channel-item" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="#" class="logo">Team<span class="highlight">Portfolio</span></a>
+                    <p>We are a team of skilled professionals dedicated to creating exceptional digital experiences for our clients.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://github.com/kuki-yui123" class="text-white me-3" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/1ABY681Kp2/" class="text-white me-3" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/arwh_crdn/" class="text-white" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0 footer-links">
+                    <h5>Team Members</h5>
+                    <ul>
+                        <li><a href="crisann.html">Cris Ann</a></li>
+                        <li><a href="aira.html">Aira</a></li>
+                        <li><a href="sam.html">Sam</a></li>
+                        <li><a href="adrienne.html">Adrienne</a></li>
+                        <li><a href="richmond.html">Richmond</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <p>Stay updated with our latest news and projects.</p>
+                    <form action="#" method="post" class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-warning" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="mb-0">&copy; 2025 Team Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Leaflet Maps -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Add JavaScript for image switching effect before the closing body tag -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to switch images in cards
+            function setupImageSwitching() {
+                const cardSwitches = document.querySelectorAll('.card-switch');
+                
+                cardSwitches.forEach(card => {
+                    const images = card.querySelectorAll('.team-member-img');
+                    let currentIndex = 0;
+                    
+                    // Initially hide all non-active images
+                    images.forEach((img, index) => {
+                        if (!img.classList.contains('active')) {
+                            img.style.opacity = '0';
+                            img.style.position = 'absolute';
+                            img.style.top = '0';
+                            img.style.left = '0';
+                        }
+                    });
+                    
+                    // Set interval to switch images
+                    setInterval(() => {
+                        // Hide current image
+                        images[currentIndex].style.opacity = '0';
+                        
+                        // Move to next image
+                        currentIndex = (currentIndex + 1) % images.length;
+                        
+                        // Show next image
+                        images[currentIndex].style.opacity = '1';
+                    }, 2000);
+                });
+            }
+            
+            // Call the function to start the switching effect
+            setupImageSwitching();
+        });
+    </script>
+</body>
+</html> 
